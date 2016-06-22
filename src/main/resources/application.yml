@@ -1,0 +1,25 @@
+server:
+  port: 8091
+  context-path: /fms
+
+file:
+  rootFolder: /Users/Ganesan/Work/Assay/FMS
+
+info:
+    app.name: File Management System Service
+    build.version: 0.1.0-XXX
+
+spring:
+ jpa:
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
+    show-sql: true
+    database-platform: org.hibernate.dialect.HSQLDialect
+ datasource:
+    data: classpath:/master.sql
+
+multipart:
+  maxFileSize: -1
+
+
